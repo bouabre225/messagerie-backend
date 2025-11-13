@@ -23,7 +23,7 @@ class AuthLoginRequest extends FormRequest
     {
         return [
             "email" => ['required', 'string', 'email', 'exists::users'],
-            "password" => ['required', 'string', 'min:8', 'current_password:users.password'],
+            "password" => ['required', 'string', 'min:8'],
         ];
     }
 }
